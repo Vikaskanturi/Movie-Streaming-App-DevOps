@@ -6,14 +6,14 @@ pipeline {
   }
 
   environment {
-    REGISTRY = "jinny1"
+    REGISTRY = "vikas546"
     BACKEND_IMAGE = "movie-streaming-backend-nodejs"
     FRONTEND_IMAGE = "movie-streaming-frontend"
     KUBE_NAMESPACE = "default"
   }
 
   stages {
-
+    
     stage('Checkout') { // job1
       agent { label 'ec2' }
       steps {
